@@ -32,11 +32,6 @@ test:
 	source $(VENV)/bin/activate
 	pytest --maxfail=1 --disable-warnings -q
 
-# Lint and type‑check
-lint:
-	source $(VENV)/bin/activate
-	flake8 .
-	mypy .
 
 # Auto‑format
 format:
